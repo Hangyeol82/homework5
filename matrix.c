@@ -95,14 +95,14 @@ int main(){
             B[i][j] = rand()%9+1;                   // B 행렬의 각 원소에 1~9 사이의 랜덤값을 대입
         }
     }
-    print_matrix(A,r ,c);
-    print_matrix(B,r ,c);
-    addition_matrix(A,B);
-    subtract_matrix(A,B);
-    transpose_matrix(A);
-    transpose_matrix(B);
-    multiply_matrix(A,B);
-    free_matrix(A);
-    free_matrix(B);
+    print_matrix(A,r ,c);                           // A행렬을 출력
+    print_matrix(B,r ,c);                           // B행렬을 출력        
+    addition_matrix(A,B);                           // A행렬과 B행렬을 더함
+    subtract_matrix(A,B);                           // A행렬과 B행렬을 뺌
+    transpose_matrix(A);                            // A행렬의 전치행렬을 구함
+    transpose_matrix(B);                            // B행렬의 전치행렬을 구함
+    multiply_matrix(A,B);                           // A행렬과 B행렬을 곱함
+    free_matrix(A);                                 // A행렬의 메모리 해제
+    free_matrix(B);                                 // B행렬의 메모리 해제       
     return 0;
 }
