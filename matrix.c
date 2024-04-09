@@ -10,6 +10,7 @@ void print_matrix(int **x, int R, int C){           // 행렬을 출력하는 �
         }   
         printf("\n");                               
     }
+    printf("\n");
 }
 void free_matrix(int **x){
     int R = sizeof(x)/sizeof(x[0]);                 // 행렬의 행의 크기를 구함
