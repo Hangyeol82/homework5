@@ -80,7 +80,7 @@ void multiply_matrix(int **x, int **y){
 }
 
 int main(){
-    printf("----- [이한결]  [2021041055] -----");
+    printf("----- [이한결]  [2021041055] -----\n");
     scanf("%d %d", &r, &c);
     int **A = (int**)malloc(sizeof(int*)*r);        // A 행렬의 행을 동적할당으로 생성
     for(int i = 0 ; i < r ; i++){
